@@ -1,0 +1,53 @@
+
+/* Layout for large screens (min-width: 901px) */
+@media (min-width: 901px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "header "
+            "nav nav"
+            "article1 article2"
+            "aside1 aside2"
+            "footer ";
+        gap: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "article1 article2"
+            "aside1 aside2";
+        gap: 20px;
+    }
+}
+
+/* Layout for medium screens (min-width: 501px and max-width: 900px) */
+@media (min-width: 501px) and (max-width: 900px) {
+    section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "article1"
+            "article2"
+            "aside1"
+            "aside2"
+            "footer";
+    }
+}
+
+/* Layout for small screens (max-width: 500px) */
+@media (max-width: 500px) {
+    section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "article1"
+            "article2"
+            "aside1"
+            "aside2"
+            "footer";
+    }
+}

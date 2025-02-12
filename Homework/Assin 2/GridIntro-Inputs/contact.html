@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <section>
+        <header>
+            <h1>Bryon Smith</h1>
+        </header>
+        <nav>
+            <a href="contact.html">Contact</a> &nbsp; | &nbsp; <a href="index.html">Home</a>
+        </nav>
+        <main>
+            <form action="submit_form.php" method="POST">
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+        
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"  required>
+                </div>
+        
+                <div>
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Your comments or questions..." required></textarea>
+                </div>
+        
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </main>
+        <footer>
+            &copy;Created by Bryon Smith - 2024
+        </footer>
+   </section> 
+</body>
+</html>

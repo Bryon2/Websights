@@ -1,0 +1,71 @@
+/* Main section styling */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Styling the header with a different background color */
+header {
+    background-color: #191a19; /* Example color: a green shade */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white; /* Ensures the title text is readable against the background */
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Center header and footer */
+header, footer {
+    text-align: center;
+    width: 100%;
+}
+
+/* ArticleOne styling with two large rows */
+#articleOne {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Layout for three large images per row */
+#articleOne div {
+    width: 30%; /* Ensure three per row */
+    margin: 10px;
+    text-align: left;
+}
+
+#articleOne img {
+    width: 100%;
+    height: auto;
+}
+
+#articleOne h2, #articleOne p {
+    margin: 10px 0;
+}
+
+/* Styling for articleTwo: single row of images */
+#articleTwo {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#articleTwo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Optional navigation styling */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}

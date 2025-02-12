@@ -1,0 +1,49 @@
+/* Spacing Between Articles */
+article {
+    margin-bottom: 20px; /* Adds space below each article */
+}
+
+/* Make Article 1 Full Width (100%) */
+article:nth-child(1) {
+    width: 100%; /* Full width of the container */
+}
+
+/* Create a Two-Column Layout for Articles 2 and 3 */
+article:nth-child(2),
+article:nth-child(3) {
+    vertical-align: top; 
+    padding-top: 10px; 
+    padding-bottom: 10px;   
+    width: 50%;
+    float:left;
+    box-sizing: border-box;
+}
+
+article:nth-child(2){
+    padding-right: 20px;
+}
+
+article:nth-child(3){
+    padding-left: 20px;
+}
+
+/* Additional styling for consistent presentation */
+article h3 {
+    color: #333;
+    margin-bottom: 10px; /* Space below headings */
+}
+
+article p {
+    margin-bottom: 10px; /* Space below paragraphs */
+}
+
+footer {
+    clear:both;
+}
+
+/* clearfix */
+main::after {
+    content: "";
+    display: table;
+    clear:both;
+}
