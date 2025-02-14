@@ -1,0 +1,147 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/registration.js"></script>
+    <style>
+        #form-container {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #form-container label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #form-container input, 
+        #form-container button {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            
+        }
+
+        #form-container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .inline-options {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .inline-options label {
+            margin-bottom: 0;
+        }
+
+        .registerP {
+            text-align: center;
+            font-weight: 100;
+        }
+
+        #registration-table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bryon Smith</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="interests.html">Interests</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Register for Updates</h2>
+            <div class="registerP">
+                <p>Fill out the form below to register your information. Your details will appear in the table upon submission.</p>
+            </div>
+            <div id="form-container">
+                <form id="registration-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required><br>
+
+                    <div class="inline-options">
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+
+                    <div class="inline-options">
+                        <label>Interests:</label>
+                        <input type="checkbox" id="interest1" name="interest" value="Coding">
+                        <label for="interest1">Coding</label>
+                        <input type="checkbox" id="interest2" name="interest" value="Design">
+                        <label for="interest2">Design</label>
+                        <input type="checkbox" id="interest3" name="interest" value="Cybersecurity">
+                        <label for="interest3">Cybersecurity</label><br><br>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <h2>Registration Details</h2>
+            <table id="registration-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <script src="scripts/scripts.js"></script>
+        <p id="footer-text"></p>
+    </footer>
+</body>
+</html>

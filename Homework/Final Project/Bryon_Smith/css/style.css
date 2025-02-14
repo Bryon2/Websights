@@ -1,0 +1,132 @@
+/* style.css */
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: aliceblue;
+}
+
+/* Header */
+header {
+    background-color: #1d39ed;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-height: 300px;
+    border: 2px solid black;
+
+    /* margin-right: 10px;   */
+    
+}
+
+main {
+    background-color: lightgray;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+main section h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.inline-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.inline-options label {
+    margin-bottom: 0;
+}
+
+#registration-table th, 
+#registration-table td {
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+#registration-table th {
+    background-color: #585858;
+    color: white;
+}
+#interest-table{
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+}
+
+#interest-table th,
+#interest-table td {
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+#interest-table th {
+    background-color: #585858;
+    color: white;
+}
